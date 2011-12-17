@@ -1,4 +1,12 @@
 Adsitape::Application.routes.draw do
+  get "pages/home"
+
+  get "pages/novidades"
+
+  get "pages/contribua"
+
+  get "pages/cronograma"
+
   get "cronograma/basico"
 
 root :to => 'cronograma#basico'
