@@ -1,0 +1,90 @@
+html, body {
+	height: 100%;
+}
+body {
+	background: #C3D9FF;
+	font-size: 11px;
+	padding: 5px;
+	color:#000000;
+	
+}
+
+.logotipo {
+	-moz-border-radius: 	10px;
+	-webkit-border-radius: 	10px;
+	border-radius: 			10px;
+	float: right;
+	width: 120px;
+	height: 90px;
+}
+
+.container { 
+	width: 710px;
+	background: #999999;
+	padding-top: 30px;
+	min-height: 100%;
+	position: relative;
+	}
+	
+
+.emconstrucao {
+	background: #cff;
+	padding: 10px;
+}
+
+.emconstrucao h1{
+	text-align: center;
+}
+
+.conteudo {
+	background: #BBBBBB;
+	padding: 5px;
+}
+	
+p {
+	text-align:justify;
+	padding: 2px;
+	margin: 0px;
+}
+
+.pcenter {
+	text-align:center;
+}
+
+h1 {
+	margin: 5px;
+}
+
+
+h2 {padding: 0px;
+	margin-top: 	5px;
+	margin-bottom: 5px;
+	}
+
+.conteudo h2 {
+	background:#FBE3E4;
+	margin: 5px;
+}
+
+header{
+	position: absolute;
+	top: 3px;
+	height: 40px;
+	width: 100%;
+}
+
+a {
+	color: #C2E1EF;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #0099FF;
+	text-decoration: underline;
+}
+
+a:visited{
+	color: #0066CC;
+}
+
+
