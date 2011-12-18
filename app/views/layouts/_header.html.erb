@@ -1,0 +1,15 @@
+		<header>
+			<% logo = image_tag("sem_logo.gif", :alt => "Alguém pode criar um logo pra pôr aqui?", :class => "logotipo")%>
+  			<%= link_to logo, root_path %>
+  			
+  			<nav class="round">
+          		<ul>
+           	 		<li><%= link_to "Home", 		root_path %></li>
+            		<li><%= link_to "Contribua", 	contribua_path %></li>
+            		<li><%= link_to "Novidades", 	novidades_path %></li>            		
+            		<li><%= link_to "Cronograma", 	cronograma_path %></li>
+            		<li><%= link_to "Tutoriais", 	tutoriais_path %></li>
+          		</ul>
+        	</nav>
+		
+		</header>

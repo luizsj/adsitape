@@ -1,12 +1,18 @@
 html, body {
-	height: 100%;
+	/*height: 100%; */
 }
 body {
 	background: #C3D9FF;
-	font-size: 11px;
+	font-size: 12px;
 	padding: 5px;
 	color:#000000;
 	
+}
+
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
 }
 
 .logotipo {
@@ -20,10 +26,14 @@ body {
 
 .container { 
 	width: 710px;
-	background: #999999;
+	background: #cff;
 	padding-top: 30px;
+	margin-top:	1px;
 	min-height: 100%;
 	position: relative;
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;	
 	}
 	
 
@@ -37,8 +47,11 @@ body {
 }
 
 .conteudo {
-	background: #BBBBBB;
+	background: #cff;
 	padding: 5px;
+  -moz-border-radius:    15px;
+  -webkit-border-radius: 15px;
+  border-radius:         15px;	
 }
 	
 p {
@@ -52,19 +65,21 @@ p {
 }
 
 h1 {
-	margin: 5px;
+	background:#FBE3E4; 
+	margin: 1px;
+	padding-left: 0px;
 }
 
 
-h2 {padding: 0px;
-	margin-top: 	5px;
-	margin-bottom: 5px;
+h2 {background:#FBE3E4; 
+	margin: 2px;
+	padding-left: 2px;
 	}
-
-.conteudo h2 {
-	background:#FBE3E4;
-	margin: 5px;
-}
+	
+h3 {background:#FBE3E4; 
+	margin: 2px;
+	padding-left: 4px;
+	}	
 
 header{
 	position: absolute;
@@ -74,7 +89,7 @@ header{
 }
 
 a {
-	color: #C2E1EF;
+	color: blue;
 	text-decoration: none;
 }
 

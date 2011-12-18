@@ -1,15 +1,26 @@
 Adsitape::Application.routes.draw do
   get "pages/home"
-
   get "pages/novidades"
-
   get "pages/contribua"
-
   get "pages/cronograma"
-
+  get "pages/tutoriais"
+  get "pages/infraestrutura"
+  get "pages/sobre"
+  get "pages/contato"
   get "cronograma/basico"
 
-root :to => 'cronograma#basico'
+  root :to => "pages#home"
+
+  match '/home',          :to => 'pages#home'
+  match '/novidades',     :to => 'pages#novidades'
+  match '/contribua',     :to => 'pages#contribua'
+  match '/cronograma',    :to => 'pages#cronograma'
+  match '/tutoriais',     :to => 'pages#tutoriais'
+  match '/infraestrutura',:to => 'pages#infraestrutura'
+  match '/sobre',         :to => 'pages#sobre'
+  match '/contato',       :to => 'pages#contato'
+
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
