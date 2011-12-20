@@ -12,9 +12,9 @@ describe "PagesLinks" do
     response.should have_selector 'title', :content => 'Contribua'
   end
   
-  it " /novidades deveria ser a página Novidades" do
-    get '/novidades'
-    response.should have_selector 'title', :content => 'Novidades'
+  it " /historico deveria ser a pagina Historico" do
+    get '/historico'
+    response.should have_selector 'title', :content => 'Historico'
   end
   
   it " /cronograma deveria a página Cronograma" do

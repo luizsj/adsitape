@@ -1,5 +1,49 @@
-<h1>Contato</h1>
-<h2>Página Stub</h2>
-<h3>Deverá disponibilizar meu nome e email</h3>
-<p>possivelmente um formulário para envio de críticas/sugestões, etc</p>
-
+<% foto = image_tag("luizsoares.jpg", :alt => "Luiz Soares de Jesus",
+						:class => "foto", 
+						:width => 120, :height => 150)%>
+  			<%= link_to foto, 'http://www.facebook.com/profile.php?id=100003033741161' %>
+<p>Luiz Soares de Jesus</p>
+<p>é o idealizador deste site</p>
+	<ul>
+		<li><%= link_to "luiz.jesus@fatec.sp.gov.br", 
+								'mailto:luiz.jesus@fatec.sp.gov.br', 
+								:class => "signup_button round" %>
+								</li>
+		<li><%= link_to "facebook", 
+								'http://www.facebook.com/profile.php?id=100003033741161', 
+								:class => "signup_button round" %>
+			
+								</li>
+		<li><%= link_to "LinkedIn", 
+								'http://www.linkedin.com/profile/view?id=146387300&trk=tab_pro', 
+								:class => "signup_button round" %>
+			  				</li>
+		<li>3o. semestre do curso de Análise e Desenvolvimento de Sistemas,<br> 
+				   na <%= link_to "Fatec Itapetininga - Prof. Antônio Belizandro Barbosa Rezende", 
+								'http://www.fatecitapetininga.edu.br/site2/', 
+								:class => "signup_button round" %>
+								</li>
+		<li>desde maio/2006, 
+			Gerente de TI na 
+					  <%= link_to "Sabrina Jóias", 
+								'http://www.sabrinajoias.com.br', 
+								:class => "signup_button round" %>
+								</li>
+		<li>mora em 
+					  <%= link_to "Cesário Lange, SP, Brasil", 
+								'http://facebook.com/CesarioLange', 
+								:class => "signup_button round" %> 
+								</li>
+		<li>
+			Em breve está página terá um formulário para envio de críticas, sugestões, etc.
+			Este recurso estará disponível assim que eu aprender a construí-lo.
+		</li>
+	</ul>
+<hr />
+<h2>Colaboradores</h2>
+	<ul>
+		<%= link_to "seja um!", 
+								contribua_path, 
+								:class => "signup_button round" %>
+	</ul>
+	

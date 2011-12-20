@@ -1,3 +1,23 @@
-<h1>Tutoriais</h1>
-<h2>Página Stub</h2>
-<h3>Deverá disponibilizar tutoriais para download</h3>
+<p>Em um futuro próximo, isto deverá ser preenchido pelo Rails
+	a partir de uma tabela no banco de dados.
+	Por enquanto, vai html estático mesmo.</p>
+<hr />
+	<p>Todos os materiais aqui publicados, exceto quando explicitamente informados pelo autor,
+		 são disponibilizados sob uma revisão própria, baseada na revisão 43, da
+		<%= link_to 'beerware license', 'http://pt.wikipedia.org/wiki/Beerware'%>.
+		
+
+	<%= helper_tutorial('Ambiente para Desenvolvimento RubyOnRails',
+						"Com máquina virtual Ubuntu, Ruby 1.8.7, Rails 3.1.3, banco de dados PostgreSql 9.1.2 e IDE Aptana Studio 3",
+						'Luiz Soares de Jesus', '19/12/2011',
+						'Microsoft Word', 'ambiente_desenvolvimento.doc', '5.21 MB',
+						'PDF', 			  'ambiente_desenvolvimento.pdf', '1.98 MB')
+						%>
+
+	<%= helper_tutorial('Ambiente para Servidor RubyOnRails',
+						"com SO Debian, <b>Ruby 1.9.2</b>, Rails 3.1.3, 
+						  banco de dados PostgreSql 9.1.2, Http Server Apache 2.2.21, Phusion Passenger",
+						'Luiz Soares de Jesus', '19/12/2011',
+						'Microsoft Word', 'ServidorRubyonRails_comRuby192.doc', '6.35 MB',
+						'PDF', 			  'ServidorRubyonRails_comRuby192.pdf', '5.10 MB')
+						%>												

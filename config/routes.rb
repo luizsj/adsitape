@@ -1,6 +1,6 @@
 Adsitape::Application.routes.draw do
   get "pages/home"
-  get "pages/novidades"
+  get "pages/historico"
   get "pages/contribua"
   get "pages/cronograma"
   get "pages/tutoriais"
@@ -12,7 +12,7 @@ Adsitape::Application.routes.draw do
   root :to => "pages#home"
 
   match '/home',          :to => 'pages#home'
-  match '/novidades',     :to => 'pages#novidades'
+  match '/historico',     :to => 'pages#historico'
   match '/contribua',     :to => 'pages#contribua'
   match '/cronograma',    :to => 'pages#cronograma'
   match '/tutoriais',     :to => 'pages#tutoriais'

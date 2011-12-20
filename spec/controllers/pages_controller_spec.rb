@@ -14,14 +14,14 @@ describe PagesController do
     end
   end
 
-  describe "GET 'novidades'" do
+  describe "GET 'historico'" do
     it "returns http success" do
-      get 'novidades'
+      get 'historico'
       response.should be_success
     end
-    it "deveria ter o titulo Novidades" do
-      get 'novidades'
-      response.should have_selector("title", :content => "AdsItape.com | Novidades")
+    it "deveria ter o titulo Historico" do
+      get 'historico'
+      response.should have_selector("title", :content => "AdsItape.com | Historico")
     end    
   end
 

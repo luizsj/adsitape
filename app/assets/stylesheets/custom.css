@@ -67,18 +67,33 @@ p {
 h1 {
 	background:#FBE3E4; 
 	margin: 1px;
+	margin-bottom: 10px;
+	margin-top: 10px;
 	padding-left: 0px;
+	font-size: 230%;
 }
 
 
 h2 {background:#FBE3E4; 
 	margin: 2px;
 	padding-left: 2px;
+	font-size: 195%;
 	}
 	
 h3 {background:#FBE3E4; 
 	margin: 2px;
 	padding-left: 4px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 160%;
+	}	
+
+h4 {background:#FBE3E4; 
+	margin: 2px;
+	padding-left: 4px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 125%;
 	}	
 
 header{
@@ -100,6 +115,71 @@ a:hover {
 
 a:visited{
 	color: #0066CC;
+}
+
+hr {
+	color: #0000FF;
+	background-color: #0000FF;
+}
+
+
+.foto {
+	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 20px;
+	
+}
+
+ul {
+	margin-left: 15px;
+	margin-bottom: 20px;
+}
+
+ul li{
+	margin-bottom: 5px;
+}
+
+.logo_infra{
+	max-height: 75px;
+	max-width: 150px;
+}
+
+.infra tr td{
+	text-align: center;
+}
+
+.trademark{
+	background-color: white;
+	font-size: 10px;
+	font-weight: normal;
+}
+
+.trademark li{
+	margin: 1px;
+}
+
+.img_historico{
+	max-height: 100px;
+	max-width: 100px;
+	padding: 5px;
+	background-color: #CCCCCC;
+}
+
+.tab_tutorial *{
+	border-width: 1px;
+	border-style:solid;
+	background-color: #CCCCCC;
+	font-size: 90%;
+}
+
+.tab_tutorial {
+	margin-bottom: 10px;
+}
+
+.tutorial {
+	background-color: #FBC2C4;
+	font-size: 12px;
 }
 
 

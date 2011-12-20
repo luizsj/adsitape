@@ -3,8 +3,8 @@ class PagesController < ApplicationController
     @title = "Home"
   end
 
-  def novidades
-    @title = "Novidades"
+  def historico
+    @title = "Historico"
   end
 
   def contribua
