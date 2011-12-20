@@ -14,6 +14,9 @@
 /log/*.log
 /tmp
 
-# Ignore tutoriais
+# Ignore outros arquivos desnecessários
 /public/tutoriais/*.*
+/test
+/bin
+*~
 
