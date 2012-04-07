@@ -10,7 +10,7 @@
         <% end %>
 <% end %>   
   
-<% if (!notice.nil?) && (notice.count >= 1) %>	   
+<% if (!notice.nil?) %>	   
 		<% notice.each do |key, value| %>
           <div class="flash <%= key %>"><%= value %></div>
         <% end %>        
