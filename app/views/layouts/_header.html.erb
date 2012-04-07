@@ -22,11 +22,9 @@
 				<% end %>   
 				  
 				<% if (!notice.nil?) %>
-					<% if (notice.count >= 1) %>	   
 						<% notice.each do |key, value| %>
 				          <div class="flash <%= key %>"><%= value %></div>
 				        <% end %> 
-				    <% end %>
 				<% end %>                     		
         	</nav>
 		</header>
