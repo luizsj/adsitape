@@ -9,7 +9,20 @@
             		<li><%= link_to "Histórico", 	historico_path %></li>            		
             		<li><%= link_to "Cronograma", 	cronograma_path %></li>
             		<li><%= link_to "Tutoriais", 	tutoriais_path %></li>
-            		<li><div class="fb-login-button">Entrar</div></li>
+            	<% if !user_signed_in? %>
+					<li>não entrou ainda! <%= link_to "Entrar via Facebook", user_omniauth_authorize_path(:facebook) %></li>
+				<% end %>
           		</ul>
+				<% if (!flash.nil?) && (flash.count >= 1) %>		
+						<% flash.each do |key, value| %>
+				          <div class="flash <%= key %>"><%= value %></div>
+				        <% end %>
+				<% end %>   
+				  
+				<% if (!notice.nil?) && (notice.count >= 1) %>	   
+						<% notice.each do |key, value| %>
+				          <div class="flash <%= key %>"><%= value %></div>
+				        <% end %>  
+				<% end %>                     		
         	</nav>
 		</header>

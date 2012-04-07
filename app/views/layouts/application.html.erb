@@ -1,3 +1,13 @@
+    <% if Rails.env.development? %>
+    <% @facebook_id =  "308830389185988" %>
+    <% @facebook_secret = "eb00a37ffea22c5ec66ba5805e12aaa7" %>
+  <% else %>
+    <% if Rails.env.production? %>
+      <% @facebook_id =  "256502224413686" %>
+      <% @facebook_secret = "f0cf4fa2da48ad874325b43d686b760c" %>
+    <% end %>
+  <% end %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,14 +27,16 @@
 	<div class="container round">
 		<%= render 'layouts/header' %>
 		
-	<%= render 'layouts/facebook/test_user'%>
-
 		<div class="conteudo">
 		<%= topo_adsitape %>
+		
+		<%= render "layouts/facebook/botaocurtir"%>
+		
 		<%= yield %>
 		</div>
 		
 		<%= render 'layouts/footer' %>
+		 <%= debug(params) if Rails.env.development? %>
 	</div>
 </body>
 </html>
