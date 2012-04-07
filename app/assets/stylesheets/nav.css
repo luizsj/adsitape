@@ -1,12 +1,13 @@
 nav {
 	position: absolute;
 	top: 0px;
-	background-color: white; 
+	background-color: #fff8dd; 
 	padding: 0px;
 	white-space: nowrap;
 	width: 80%;
 	text-align: center;
 	margin-bottom: 10px;
+	margin-left: 10px;
 	
 }
 

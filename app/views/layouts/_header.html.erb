@@ -1,5 +1,5 @@
 		<header>
-			<% logo = image_tag("sem_logo.gif", :alt => "Alguém pode criar um logo pra pôr aqui?", :class => "logotipo")%>
+			<% logo = image_tag("sem_logo.gif", :alt => "Alguém pode criar um logo pra pôr aqui?", :class => "logotipo round")%>
   			<%= link_to logo, contribua_path %>
   			
   			<nav class="round">
@@ -9,6 +9,7 @@
             		<li><%= link_to "Histórico", 	historico_path %></li>            		
             		<li><%= link_to "Cronograma", 	cronograma_path %></li>
             		<li><%= link_to "Tutoriais", 	tutoriais_path %></li>
+            		<li><div class="fb-login-button">Entrar</div></li>
           		</ul>
         	</nav>
 		

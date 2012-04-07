@@ -2,11 +2,23 @@ html, body {
 	/*height: 100%; */
 }
 body {
-	background: #C3D9FF;
+	background: #ffd382 ;
 	font-size: 12px;
+	font-family: "Calibri", "Verdana", "Georgia", "Serif";
 	padding: 5px;
 	color:#000000;
-	
+}
+
+.container {
+	background: #ffdc9b;
+}
+
+.conteudo {
+	background: #fff2c6;
+}
+
+h1,h2,h3,h4{
+	background:#ffdc9b;	
 }
 
 .round {
@@ -16,9 +28,6 @@ body {
 }
 
 .logotipo {
-	-moz-border-radius: 	10px;
-	-webkit-border-radius: 	10px;
-	border-radius: 			10px;
 	float: right;
 	width: 120px;
 	height: 90px;
@@ -26,14 +35,11 @@ body {
 
 .container { 
 	width: 710px;
-	background: #cff;
 	padding-top: 30px;
 	margin-top:	1px;
 	min-height: 100%;
 	position: relative;
-  -moz-border-radius:    10px;
-  -webkit-border-radius: 10px;
-  border-radius:         10px;	
+
 	}
 	
 
@@ -47,7 +53,6 @@ body {
 }
 
 .conteudo {
-	background: #cff;
 	padding: 5px;
   -moz-border-radius:    15px;
   -webkit-border-radius: 15px;
@@ -64,8 +69,8 @@ p {
 	text-align:center;
 }
 
+
 h1 {
-	background:#FBE3E4; 
 	margin: 1px;
 	margin-bottom: 10px;
 	margin-top: 10px;
@@ -74,22 +79,19 @@ h1 {
 }
 
 
-h2 {background:#FBE3E4; 
-	margin: 2px;
+h2 {margin: 2px;
 	padding-left: 2px;
 	font-size: 195%;
 	}
 	
-h3 {background:#FBE3E4; 
-	margin: 2px;
+h3 {margin: 2px;
 	padding-left: 4px;
 	margin-top: 5px;
 	margin-bottom: 5px;
 	font-size: 160%;
 	}	
 
-h4 {background:#FBE3E4; 
-	margin: 2px;
+h4 {margin: 2px;
 	padding-left: 4px;
 	margin-top: 5px;
 	margin-bottom: 5px;
@@ -106,11 +108,15 @@ header{
 a {
 	color: blue;
 	text-decoration: none;
+	background: #fff2c6;
+	font-size: 13px;
 }
 
 a:hover {
-	color: #0099FF;
+	color: blue;
 	text-decoration: underline;
+	background-color: #ffdc9b;
+	
 }
 
 a:visited{
@@ -178,7 +184,7 @@ ul li{
 }
 
 .tutorial {
-	background-color: #FBC2C4;
+	background-color: #ffdc9b;
 	font-size: 12px;
 }
 
