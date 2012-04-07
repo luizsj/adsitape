@@ -13,18 +13,6 @@
 					<li>não entrou ainda! <%= link_to "Entrar via Facebook", user_omniauth_authorize_path(:facebook) %></li>
 				<% end %>
           		</ul>
-				<% if (!flash.nil?) %>
-					<% if (flash.count >= 1) %>		
-						<% flash.each do |key, value| %>
-				          <div class="flash <%= key %>"><%= value %></div>
-				        <% end %>
-				    <% end %>
-				<% end %>   
-				  
-				<% if (!notice.nil?) %>
-						<% notice.each do |key, value| %>
-				          <div class="flash <%= key %>"><%= value %></div>
-				        <% end %> 
-				<% end %>                     		
+                   		
         	</nav>
 		</header>
