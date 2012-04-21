@@ -90,5 +90,7 @@ describe PagesController do
       response.should have_selector("title", :content => "AdsItape.com | Contato")
     end      
   end  
+  
+  #testes para os vídeos de android
 
 end
