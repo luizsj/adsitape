@@ -4,7 +4,7 @@ module UsersHelper
   def facebook_acessivel?
       if Rails.env.production?
         begin
-          Timeout.timeout(5) do 
+          timeout(5) do 
             s = TCPSocket.new('www.facebook.com', 'echo')
             s.close
             return true
