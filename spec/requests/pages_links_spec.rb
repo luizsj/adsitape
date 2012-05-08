@@ -1,8 +1,12 @@
 require 'spec_helper'
 
 describe "PagesLinks" do
-  
+  before(:each) do
+     OmniAuth.config.test_mode = true
+     facebook_acessivel = true
+  end
   it " / deveria ser a página Home" do
+    OmniAuth.config.test_mode = true
     get '/'
     response.should have_selector 'title', :content => 'Home'
   end
@@ -42,5 +46,29 @@ describe "PagesLinks" do
     response.should have_selector 'title', :content => 'Contato'
   end  
   
+  
+  
+  describe ":: Funcoes de login" do
+    describe ", quando nao esta logado " do
+      describe ", se facebook esta acessivel " do
+        it "deveria ter um link  'Entrar via Facebook' " do
+          get '/home'
+          response.should have_selector 'a', :content => 'Entrar via Facebook'          
+        end
+      end
+      
+      
+      describe ", se facebook não está acessível" do
+        before(:each) do
+          facebook_acessivel = false
+        end
+        it ", deveria exibir um form de login manual" do
+          get '/home'
+          response.should have_selector 'form', :name => 'login_manual'
+        end
+      end
+      
+    end
+  end
   
 end

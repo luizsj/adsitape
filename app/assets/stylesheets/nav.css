@@ -4,11 +4,14 @@ nav {
 	background-color: #fff8dd; 
 	padding: 0px;
 	white-space: nowrap;
-	width: 80%;
 	text-align: center;
 	margin-bottom: 10px;
 	margin-left: 10px;
 	
+}
+
+header nav {
+	width: 80%;
 }
 
 footer nav {

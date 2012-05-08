@@ -2,17 +2,41 @@
 			<% logo = image_tag("sem_logo.gif", :alt => "Alguém pode criar um logo pra pôr aqui?", :class => "logotipo round")%>
   			<%= link_to logo, contribua_path %>
   			
-  			<nav class="round">
-          		<ul>
+         	<nav class="round">
+          		<ul> 			
            	 		<li><%= link_to "Home", 		root_path %></li>
             		<li><%= link_to "Contribua", 	contribua_path %></li>
             		<li><%= link_to "Histórico", 	historico_path %></li>            		
             		<li><%= link_to "Cronograma", 	cronograma_path %></li>
             		<li><%= link_to "Tutoriais", 	tutoriais_path %></li>
-            	<% if !user_signed_in? %>
-					<li>não entrou ainda! <%= link_to "Entrar via Facebook", user_omniauth_authorize_path(:facebook) %></li>
+				</ul>
+				<hr>
+				
+          		<ul>
+          		
+          			<% if @logging_out %>
+          				<p>logging out </p>
+          				<% session.warden.user.user.key = "" %>
+          			<% end %>
+          			
+        		
+        	     <% if !user_signed_in? %>
+            		<% if facebook_acessivel? %>
+						<li>não entrou ainda! <br><%= link_to "Entrar via Facebook", user_omniauth_authorize_path(:facebook) %></li>
+					<% else %>
+						<li>facebook não está acessível</li>
+					<% end %>
+					<li>login manual: <%= render "layouts/facebook/login_manual" %></li>
+				<% else %>
+					<li>Usuário logado: <%= current_user.email %> <br />
+						<%= link_to "Sair", facebook_logout_path %>
+					</li>
 				<% end %>
-          		</ul>
-                   		
+				
+					<li><%= render "layouts/facebook/botaocurtir"%></li>
+					
+          		</ul>	
+          		<hr>			
         	</nav>
+        	
 		</header>

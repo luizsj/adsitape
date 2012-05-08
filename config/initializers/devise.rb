@@ -3,13 +3,13 @@
 Devise.setup do |config|
   
   require "omniauth-facebook"
-  if Rails.env.development?
-    config.omniauth :facebook, "308830389185988", "eb00a37ffea22c5ec66ba5805e12aaa7", :strategy_class => OmniAuth::Strategies::Facebook
-  else
-    if Rails.env.production?
+  if Rails.env.production?
       config.omniauth :facebook, "256502224413686", "f0cf4fa2da48ad874325b43d686b760c", :strategy_class => OmniAuth::Strategies::Facebook
-    end
+  else
+    config.omniauth :facebook, "308830389185988", "eb00a37ffea22c5ec66ba5805e12aaa7", :strategy_class => OmniAuth::Strategies::Facebook,  :scope => 'email'
   end
+  
+ 
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -201,7 +201,7 @@ Devise.setup do |config|
   # Configure sign_out behavior.
   # Sign_out action can be scoped (i.e. /users/sign_out affects only :user scope).
   # The default is true, which means any logout action will sign out all active scopes.
-  # config.sign_out_all_scopes = true
+  config.sign_out_all_scopes = true
 
   # ==> Navigation configuration
   # Lists the formats that should be treated as navigational. Formats like

@@ -2,6 +2,7 @@ Adsitape::Application.routes.draw do
   get "videos/show"
 
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+  match '/auth/facebook/logout' => 'application#facebook_logout', :as => :facebook_logout
 
   get "pages/home"
   get "pages/historico"
