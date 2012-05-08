@@ -24,7 +24,13 @@
             		<% if facebook_acessivel? %>
 						<li>não entrou ainda! <br><%= link_to "Entrar via Facebook", user_omniauth_authorize_path(:facebook) %></li>
 					<% else %>
-						<li>facebook não está acessível</li>
+						<li>facebook não está acessível
+							<% if Rails.env.production? %>
+								, Rails em modo production
+							<% else %>
+								, Rails em modo development
+							<% end %>
+							</li>
 					<% end %>
 					<li>login manual: <%= render "layouts/facebook/login_manual" %></li>
 				<% else %>
